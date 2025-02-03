@@ -36,7 +36,7 @@ public class MessageConsumerService {
             kafkaTemplate.send(AppConstants.AUTH_RES_TOPIC, responseMessageJson);
             logger.info("Send Kafka topic : " + AppConstants.AUTH_RES_TOPIC);
             logger.info("Send Kafka message : {}", response);
-        }catch (Exception e){
+        } catch (Exception e) {
             logger.error(e.getMessage());
         }
     }
